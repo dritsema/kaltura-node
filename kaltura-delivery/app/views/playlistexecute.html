@@ -1,0 +1,8 @@
+<h3>All Media In Playlist {{getPlaylistExecute.length}} </h3>
+<div ng-show="getPlaylistExecute">
+  <ul>
+    <div ng-repeat="p in getPlaylistExecute">
+      <li>Media Item #{{p.id}}: {{p.name}}</li>
+    </div>
+  </ul>
+</div>

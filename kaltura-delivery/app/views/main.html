@@ -1,0 +1,69 @@
+<div class="jumbotron">
+
+	<div class="row">
+		<div id="network-select" class="col-xs-12">
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+					Networks
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">All Advertisers</a></li>
+					<li><a href="#">ABC</a></li>
+					<li><a href="#">ABC Family</a></li>
+					<li><a href="#">Disney Channel</a></li>
+					<li><a href="#">Disney Junior</a></li>
+					<li><a href="#">Disney XD</a></li>
+					<li><a href="#">ESPN</a></li>
+					<li><a href="#">ESPN Deportes</a></li>
+					<li><a href="#">Fusion</a></li>
+					<li><a href="#">SEC Network</a></li>
+					<li><a href="#">Watch Disney Channel</a></li>
+					<li><a href="#">Watch Disney XD</a></li>
+					<li><a href="#">WatchESPN</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="search-container" class="col-xs-12 col-md-6">
+			<div class="input-group stylish-input-group">
+				<input type="text" class="form-control"  placeholder="Search for videos" >
+				<span class="input-group-addon">
+					<button type="submit">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="video-container" class="row">
+		<div id="video-player" class="col-xs-12 col-md-6">
+			<div id="kaltura_player_1449171819" style="width: 100%; height: 280px;"></div>
+			<script>
+				kWidget.embed({
+				  "targetId": "kaltura_player_1449171819",
+				  "wid": "_1914541",
+				  "uiconf_id": 32537591,
+				  "flashvars": {
+				    "streamerType": "auto"
+				  },
+				  "cache_st": 1449171819,
+				  "entry_id": "1_bady605s"
+				});
+			</script>
+		</div>
+	</div>
+	<div class="row">
+		<div id="video-list">
+			<h3>All Media ({{allMedia.result.length}} Unfiltered Items)</h3>
+			<div ng-show="allMedia">
+				<div ng-repeat="m in allMedia.result" class="col-xs-6 col-sm-4">
+					<a href="#/media/{{m.id}}" title="{{m.name}}"><img src="{{m.thumbnailUrl}}" /></a>
+					<div>{{m.description}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

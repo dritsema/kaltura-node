@@ -1,0 +1,32 @@
+{
+
+	"APP_ID" :"kaltura-spot-delivery",
+	"APP_KEY" :"XXXXXXXXXXX",
+	"APP_PORT": 3109,
+	"DIRECTORY_REST_SERVICE_BASE_URL" :"http://espnappsqa.corp.disney.com/directory/v2/rest",
+	"APP_OAUTH_TOKEN" : "APP_OAUTH_TOKEN",
+	"BEARER_STRING": "Bearer ",
+	"OAUTH_SERVICE_BASE_URL": "https://qa-homefield.espn.com",
+	"OAUTH_SERVICE_AUTHENTICATE_END_POINT": "/authservice/auth",
+	"OAUTH_SERVICE_VALIDATE_END_POINT":
+					"/authservice/validate?grant_type=urn:pingidentity.com:oauth2:grant_type:validate_bearer&token=",
+	"LOG_LEVEL": "debug",
+	"DIRECTORY_PERSON_LIGHT_END_POINT" : "/person",
+	"HTTP_SUCCESS_CODE" :200,
+	"HTTP_NOT_ACCEPTABLE" :406,
+	"HTTP_INTERNAL_SERVER_ERROR_CODE" : 500,
+	"FIVE_MIN_MS": 30000,
+	"REFRESH_THRESHOLD" : 120,
+	"SECONDS_STR": "seconds",
+	"DATE_FORMAT" : "YYYY-MM-DD HH:mm:ss",
+
+	"passport": {
+			"strategy" : "saml",
+			"saml" : {
+				"path" : "/login/callback",
+				"entryPoint" : "https://qa-homefield.espn.com/idp/startSSO.ping?PartnerSpId=SP-RI-PING&ACSIdx=999",
+				"issuer" : "passport-saml"
+			}
+		}
+
+}

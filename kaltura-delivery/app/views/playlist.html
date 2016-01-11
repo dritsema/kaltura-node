@@ -1,0 +1,12 @@
+  <h3>Playlist</h3>
+  <ul>
+    <li><a href="#/playlist/execute/{{getPlaylist.id}}">Playlist Contents</a></li>
+    <li>Name: {{getPlaylist.name}}</li>
+    <li>Description: {{getPlaylist.description}}</li>
+    <li>CreatorId: {{getPlaylist.creatorId}}</li>
+  </ul>
+
+<!-- Directive Is Not configured -->
+<div ng-show="getPlaylist">
+  <espn-playlist playlistData="getPlaylist"></espn-playlist>
+</div>

@@ -1,0 +1,108 @@
+/* ------------------------------------------------------------------------- *
+ *  Global SASS for Spot Delivery
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- *
+ *  Partial: Variables
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- *
+ *  Module: Core
+/* ------------------------------------------------------------------------- */
+/*
+.btn-primary {
+	background-image: none;
+	padding: 0 20px;
+	background: #e66f45;
+	border-style: solid;
+	border-color: #e66f45;
+	border-radius: 3px;
+	height: 30px;
+	outline: none;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: #7E3B2A;
+}
+*/
+#spot-delivery {
+  font-family: Helvetica, sans-serif;
+  color: #333; }
+
+/* ------------------------------------------------------------------------- *
+ *  Module: Search
+/* ------------------------------------------------------------------------- */
+#search-container {
+  margin-top: 20px; }
+  #search-container .input-group-addon {
+    background: white !important;
+    padding: 0px 12px; }
+  #search-container .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc; }
+  #search-container button {
+    border: 0;
+    background: transparent; }
+
+/* ------------------------------------------------------------------------- *
+ *  Module: Video
+/* ------------------------------------------------------------------------- */
+#video-container {
+  margin-top: 20px; }
+  #video-container #video-meta {
+    font-size: 12px;
+    padding-left: 0; }
+    #video-container #video-meta #network-logo img {
+      width: 80px; }
+    #video-container #video-meta #title-container {
+      padding: 15px; }
+    #video-container #video-meta #network-name {
+      font-size: 14px; }
+    #video-container #video-meta #show-title {
+      color: #606060; }
+    #video-container #video-meta #dates-container {
+      padding-top: 15px; }
+    #video-container #video-meta #dates::before {
+      font-weight: 900;
+      content: "Valid Dates: "; }
+    #video-container #video-meta #runtime::before {
+      font-weight: 900;
+      content: "Running Time: "; }
+    #video-container #video-meta #description-container::before {
+      font-weight: 900;
+      content: "Description: "; }
+    #video-container #video-meta #description {
+      border: 1px solid #888;
+      border-radius: 5px;
+      padding: 5px; }
+
+#download-container a {
+  text-decoration: none; }
+#download-container #download-controls {
+  padding-top: 5px; }
+#download-container #button-download,
+#download-container #button-share {
+  float: left;
+  max-width: 100px;
+  padding-right: 15px; }
+
+@media only screen and (min-width: 320px) {
+  /* ------------------------------------------------------------------------- *
+   *  Breakpoint: XS (Bootstrap Mobile and up)
+  /* ------------------------------------------------------------------------- */
+  #spot-delivery #video-meta #network-logo {
+    padding-top: 20px; }
+  #spot-delivery #video-meta #title-container {
+    padding-top: 20px; } }
+@media only screen and (min-width: 992px) {
+  /* ------------------------------------------------------------------------- *
+   *  Breakpoint: MD (Bootstrap Tablet and up)
+  /* ------------------------------------------------------------------------- */
+  #spot-delivery #video-meta #network-logo {
+    padding-top: 0px; } }
+
+/*# sourceMappingURL=main.css.map */

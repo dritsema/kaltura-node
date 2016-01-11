@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------------------- *
+ *  Module: Video
+/* ------------------------------------------------------------------------- */
+
+#video-container {
+	margin-top: 20px;
+
+	#video-meta {
+		font-size: 12px;
+		padding-left: 0;
+
+		#network-logo img {
+			width: 80px;
+			border-radius: 2px;
+		}
+
+		#title-container { padding: $standard-padding; }
+		#network-name { font-size: 14px; }
+		#show-title { color: #606060; }
+
+		#dates-container {
+			padding-top: $standard-padding;
+		}
+
+		#dates::before {
+			font-weight: $weight-bold;
+			content: "Valid Dates: ";
+		}
+
+		#runtime::before {
+			font-weight: $weight-bold;
+			content: "Running Time: ";
+		}
+
+		#description-container::before {
+			font-weight: $weight-bold;
+			content: "Description: ";
+		}
+
+		#description {
+			border: 1px solid $secondary-grey;
+			border-radius: $border-radius;
+			padding: 5px;
+		}
+	}
+}
+
+#download-container {
+
+	a { text-decoration: none; }
+
+	#download-controls { padding-top: 5px; }
+
+	#button-download,
+	#button-share {
+		float: left;
+		max-width: 100px;
+		padding-right: 15px;
+	}
+}

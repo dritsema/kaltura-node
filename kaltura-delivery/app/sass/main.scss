@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------------------- *
+ *  Global SASS for Spot Delivery
+/* ------------------------------------------------------------------------- */
+
+// Partials
+@import "partials/variables";
+
+// Modules
+@import "modules/core";
+@import "modules/search";
+@import "modules/video";
+
+// Media Queries
+@media only screen and (min-width : 320px) {
+	@import "breakpoints/xs";
+}
+@media only screen and (min-width : 992px) {
+	@import "breakpoints/md";
+}

@@ -1,0 +1,95 @@
+{
+  "group": "espn-ese-kaltura",
+  "name": "kaltura-spot-delivery",
+  "description": "ExpressJS, NodeJS",
+  "version": "1.0.0",
+  "author": {
+    "name": "ese-business-apps",
+    "email": ""
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "chalk": "1.0.0",
+    "connect-flash": "0.1.1",
+    "cookie-parser": "^1.4.0",
+    "cors": "2.5.3",
+    "ejs": "^2.3.4",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "express-validator": "2.8.0",
+    "gen-uuid": "0.0.1",
+    "jade": "^1.11.0",
+    "lodash": "3.3.1",
+    "method-override": "^2.3.5",
+    "moment": "2.9.0",
+    "morgan": "^1.6.1",
+    "passport": "^0.3.0",
+    "passport-saml": "^0.13.0",    
+    "restler": "3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.7.3",
+    "grunt-open": "~0.2.3",
+    "grunt-express-server": "~0.4.19",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-cssmin": "^0.12.1",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-imagemin": "^0.9.3",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^2.1.2",
+    "grunt-google-cdn": "^0.4.0",
+    "grunt-newer": "^1.1.0",
+    "grunt-ng-annotate": "*",
+    "grunt-svgmin": "^2.0.0",
+    "grunt-usemin": "^3.0.0",
+    "grunt-webdav-deploy": "^0.5.1",
+    "grunt-wiredep": "^2.0.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dritsema/kaltura-node.git"
+  },
+  "deployment_profile": {
+    "app_type": "nodejs",
+    "iwebdev": {
+      "servers": [
+        "iwebdev01",
+        "iwebdev02"
+      ],
+      "dest": "/data/web/nodeapps",
+      "dir_name": "kaltura-spot-delivery"
+    },
+    "iwebqa": {
+      "servers": [
+        "iwebqa03",
+        "iwebqa04"
+      ],
+      "dest": "/data/web/nodeapps",
+      "dir_name": "kaltura-spot-delivery"
+    },
+    "iwebtest": {
+      "servers": [
+        "iwebtest01",
+        "iwebtest02"
+      ],
+      "dest": "/data/web/nodeapps",
+      "dir_name": "kaltura-spot-delivery"
+    }
+  }
+}

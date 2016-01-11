@@ -1,0 +1,16 @@
+{
+	"app": {
+		"title": "kaltura-service",
+		"description": "Kaltura, Node.js",
+		"keywords": "Kaltura, video, kaltura"
+	},
+	"app_port":3999,
+	"partnerId": "",
+	"secret": "",
+	"userId": "",
+	"five_min_interval": 30000,
+	"date_format" : "YYYY-MM-DD HH:mm:ss",
+	"error_codes": {
+		"unauthorized" : {"code":"403","message":"Request received from invalid client"}
+	}
+}

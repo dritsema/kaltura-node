@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------------------- *
+ *  Module: Search
+/* ------------------------------------------------------------------------- */
+
+#search-container {
+	margin-top: 20px;
+
+	.input-group-addon {
+		background: white !important;
+		padding: 0px 12px;
+	}
+
+	.form-control {
+		border-right: 0; 
+		box-shadow: 0 0 0; 
+		border-color: #ccc;
+	}
+
+	button {
+		border: 0;
+		background: transparent;
+	}
+}
