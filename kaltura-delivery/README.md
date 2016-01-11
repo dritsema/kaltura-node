@@ -1,4 +1,4 @@
-# kaltura-spot-delivery
+# kaltura-delivery
 
 
 ## Build & development
