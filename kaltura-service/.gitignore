@@ -1,7 +1,0 @@
-node_modules
-.tmp
-logs/*
-.DS_Store
-dist
-bower_components
-properties.sh
